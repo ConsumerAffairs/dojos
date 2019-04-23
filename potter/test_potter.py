@@ -28,7 +28,8 @@ def test_equal_books():
 
 
 def test_different_books():
-    assert potter([books[0], books[1]]) == 16
+    discount = 1 - (5 / 100)
+    assert potter([books[0], books[1]]) == 16 * discount
 
 
 def test_three_different_books():
